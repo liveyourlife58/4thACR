@@ -1,0 +1,322 @@
+html {
+    width: 100%;
+}
+
+body {
+    color: white;
+    background-color: rgb(29, 1, 17);
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Necromancer','Black Ops One';
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: "Necromancer";
+    src: url(../fea/media/fonts/Necromancer-lgP8Z.ttf) format("truetype");}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 4rem;
+    padding: .5rem 0rem;
+}
+
+a { 
+    font-size: 2rem;
+    color: inherit;
+}
+
+.main-img {
+    width: 100%;
+    height: 120px;
+
+}
+
+.fireteam-img {
+    width: 100%;
+
+}
+
+.main-img img {
+    width: 87%;
+    height: auto;
+    padding: 2rem;
+    background-color:rgb(23, 26, 29);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.fireteam-img img {
+    width: 87%;
+    height: auto;
+    padding: 2rem;
+    background-color:rgb(23, 26, 29);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+#nav-tags {
+    display: flex;
+    color: white;
+}
+
+
+#nav-tags a {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#nav-tags a:hover {
+    text-decoration: underline;
+}
+
+#nav-tags :visited {
+    color: white;
+}
+
+.class-link {
+    padding: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    height: 4rem;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.nav-container img {
+    display: flex;
+    height: 5rem;
+}
+
+
+.container-prod {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1350px;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.rune-icon {
+    max-height: 100px;
+    width: auto;
+    padding-bottom: 1rem;
+}
+
+
+
+.container-txt {
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+.product-txt {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 49%;
+    text-align: center;
+    min-width: 116px;
+}
+
+.product-cont {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 250px;
+    justify-content: center;
+    color:white;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(23, 26, 29);
+}
+
+.product-cont img {
+    width: 80%;
+    max-height: 120px;
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+#crypto-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.footer {
+    padding: 1rem;
+}
+
+
+ /* info-box setup */
+
+ .info-box {
+    display: flex;
+    width: 80%;
+    height: 452px;
+    margin: 1rem auto;
+    border: 3px solid white;
+    overflow: hidden;
+    background-color: rgb(23, 26, 29);
+  }
+
+  /* styling info-box tabs */
+
+  .info-box ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid rgb(23, 26, 29);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .info-box li {
+    float: left;
+    list-style-type: none;
+    width: 220px;
+  }
+
+  .info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 50px;
+    background: white;
+    color: rgb(16, 63, 100);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .info-box li a:focus, .info-box li a:hover {
+    background-color: rgb(23, 26, 29);
+    color: white;
+    cursor: alias;
+  }
+
+  .info-box li a:active {
+    background-color: rgb(23, 26, 29);
+    color: white;
+  }
+
+
+  /* styling info-box panels */
+
+  .info-box .panels {
+    background-image: url("/media/aic.jpg");
+    position: relative;
+    margin: 0 auto;
+    width: 92%;
+  }
+
+  .info-box article {
+    background-color: rgb(23, 26, 29);
+    color: white;
+    position: absolute;
+    width: 92%;
+    margin: 0 auto;
+    font-size: 4vw;
+    line-height: 3rem
+  }
+
+  .info-box .active-panel {
+    z-index: 1;
+    background-color:rgb(23, 26, 29);
+  }
+
+
+
+
+    @media screen and (max-width: 650px) {
+        #products { 
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        h1 {
+            font-size: 5rem;
+        }
+        h2 {
+            font-size: 3rem;
+            
+        }
+        h3 {
+            font-size: 2rem;
+        }
+
+        #nav-tags a {
+            padding: 0rem 1rem;
+            font-size: 5vw;
+        }
+
+        .main-img img {
+            width: 80%;
+        }
+        
+        .info-box article { 
+            top: 0px;
+        }
+
+        .info-box {
+            display: block;
+            height: 710px;
+            align-content: center;
+            padding-bottom: 50px;
+          }
+
+          .info-box li{
+            width: 100%
+          }
+
+          .info-box .panels {
+            left: 20px;
+          }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        .info-box article { 
+            top: 90px;
+        }
+    }
+
+
+    @media screen and (max-width: 100px) {
+        
+        #crypto-container {
+            flex-direction: column;
+        }
+
+        #footer {
+            flex-direction: column;
+        }
+
+
+        #nav-tags {
+            flex-direction: column;
+        }
+
+        #nav-tags a {
+            padding: 0;
+        }
+    }
+
+
+
+
+
